@@ -21,7 +21,7 @@ This repository contains my personal configuration files and setup scripts for t
    ```bash
    ./install.sh
 
-3. **Finish setup
+3. **Finish setup**
   Open tmux and press Ctrl + s then I to install plugins via TPM
 
 ## 📁 Structure
