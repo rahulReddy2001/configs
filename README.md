@@ -15,7 +15,7 @@ This repository contains my personal configuration files and setup scripts for t
 1. **Clone this repo**  
    ```bash
    git clone https://github.com/<your-username>/configs.git
-   cd dotfiles
+   cd configs
 
 2. **Run the installer**  
    ```bash
