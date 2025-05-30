@@ -14,22 +14,27 @@ This repository contains my personal configuration files and setup scripts for t
 
 1. **Clone this repo**  
    ```bash
-   git clone https://github.com/<your-username>/dotfiles.git
+   git clone https://github.com/<your-username>/configs.git
    cd dotfiles
 
 2. **Run the installer**  
    ```bash
    ./install.sh
 
-3. **Finish setup
+3. **Finish setup**
   Open tmux and press Ctrl + s then I to install plugins via TPM
 
 ## 📁 Structure
 
+```text
 dotfiles/
-├── install.sh       # Install and link everything
-├── scripts/         # Helper scripts (e.g., link.sh)
-├── tmux/            # Tmux config and TPM plugins
-├── nvim/            # Neovim config
-├── zsh/             # Zsh config
-└── git/             # Git config 
+├── install.sh         # Install and link everything
+├── scripts/           # Helper scripts (e.g., link.sh)
+├── tmux/              # Tmux config and TPM plugins
+│   └── .tmux.conf
+├── nvim/              # Neovim config
+│   └── init.lua (or init.vim)
+├── zsh/               # Zsh config
+│   └── .zshrc
+└── git/               # Git global config
+    └── .gitconfig
