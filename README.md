@@ -26,10 +26,15 @@ This repository contains my personal configuration files and setup scripts for t
 
 ## 📁 Structure
 
+```text
 dotfiles/
-├── install.sh       # Install and link everything
-├── scripts/         # Helper scripts (e.g., link.sh)
-├── tmux/            # Tmux config and TPM plugins
-├── nvim/            # Neovim config
-├── zsh/             # Zsh config
-└── git/             # Git config 
+├── install.sh         # Install and link everything
+├── scripts/           # Helper scripts (e.g., link.sh)
+├── tmux/              # Tmux config and TPM plugins
+│   └── .tmux.conf
+├── nvim/              # Neovim config
+│   └── init.lua (or init.vim)
+├── zsh/               # Zsh config
+│   └── .zshrc
+└── git/               # Git global config
+    └── .gitconfig
