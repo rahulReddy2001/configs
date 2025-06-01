@@ -33,7 +33,9 @@ dotfiles/
 ├── tmux/              # Tmux config and TPM plugins
 │   └── .tmux.conf
 ├── nvim/              # Neovim config
-│   └── init.lua (or init.vim)
+│   └── init.lua       # Entrypoint 
+│   └── lua/           # Plugin config and settings
+│       └── plugins/    
 ├── zsh/               # Zsh config
 │   └── .zshrc
 └── git/               # Git global config
