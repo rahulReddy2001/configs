@@ -13,6 +13,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 mkdir -p ~/.config
 
 # Link everything
-bash ./scripts/link.sh
+bash ./scripts/links.sh
 
 echo "Launch tmux and run prefix + I to install plugins"
