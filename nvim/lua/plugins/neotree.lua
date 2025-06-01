@@ -10,7 +10,7 @@ return {
   opts = {
   },
   config = function()
-    vim.keymap.set('n', '<C-n>', ":Neotree filesystem reveal left<CR>")
+    vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>', { noremap = true, silent = true })
   end,
 }
 
