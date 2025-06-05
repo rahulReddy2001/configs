@@ -1,6 +1,6 @@
 return {
   'nvim-lualine/lualine.nvim',
-  dependencies = {
+  dependencies = { 
     'nvim-tree/nvim-web-devicons'
   },
   config = function()
@@ -9,5 +9,5 @@ return {
         theme = 'dracula'
       }
     })
-  end
+  end  
 }
