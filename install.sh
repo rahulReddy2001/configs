@@ -82,8 +82,8 @@ if ! grep -q 'export PATH="$HOME/.local/bin:$PATH"' "$SHELL_RC"; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
 
-mkdir -p ~/.config/tmux/plugins/catppuccin
-git clone -b v2.1.3 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
+# Clone TPM
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # === Link dotfiles (your custom symlink script) ===
 echo "🔗 Linking dotfiles..."
