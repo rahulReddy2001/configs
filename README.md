@@ -37,6 +37,6 @@ dotfiles/
 │   └── lua/           # Plugin config and settings
 │       └── plugins/    
 ├── zsh/               # Zsh config
-│   └── .zshrc
+├── bash/               # Bash config
 └── git/               # Git global config
     └── .gitconfig
