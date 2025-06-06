@@ -82,13 +82,8 @@ if ! grep -q 'export PATH="$HOME/.local/bin:$PATH"' "$SHELL_RC"; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
 
-# === Setup TPM (Tmux Plugin Manager) ===
-echo "🧰 Setting up TPM..."
-if [ -d "$TPM_DIR" ] && [ "$(ls -A "$TPM_DIR")" ]; then
-    echo "✅ TPM already exists at $TPM_DIR, skipping clone."
-else
-    git clone https://github.com/tmux-plugins/tpm "$TPM_DIR"
-fi
+mkdir -p ~/.config/tmux/plugins/catppuccin
+git clone -b v2.1.3 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
 
 # === Link dotfiles (your custom symlink script) ===
 echo "🔗 Linking dotfiles..."
