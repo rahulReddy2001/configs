@@ -15,7 +15,7 @@ return {
     },
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = {"vimls", "pyright", "clangd"},
+        ensure_installed = {"vimls", "pyright", "clangd", "bashls"},
       })
     end
   },
@@ -32,6 +32,9 @@ return {
         capabilities = capabilities,
       })
       lspconfig.vimls.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.bashls.setup({
         capabilities = capabilities,
       })
       vim.keymap.set('n', 'K', vim.lsp.buf.hover,{})
