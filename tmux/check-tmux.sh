@@ -22,7 +22,7 @@ version_le() {
 
 if version_le "$CURRENT_VERSION" "$REQUIRED_VERSION"; then
     echo "⚠️ tmux version $CURRENT_VERSION is ≤ $REQUIRED_VERSION. Installing 3.5a..."
-    bash ./install_tmux.sh
+    bash ./tmux-setup.sh
 else
     echo "✅ tmux version $CURRENT_VERSION is up-to-date."
 fi
