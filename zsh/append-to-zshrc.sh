@@ -1,4 +1,6 @@
-et -e
+#!/bin/bash
+
+set -e
 
 ZSHRC="$HOME/.zshrc"
 
