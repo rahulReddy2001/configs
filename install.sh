@@ -88,6 +88,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # === Link dotfiles (your custom symlink script) ===
 echo "🔗 Linking dotfiles..."
 bash "$DOTFILES/scripts/links.sh"
+bash "$DOTFILES/tmux/check-tmux.sh"
 
 # === Final Message ===
 echo ""
