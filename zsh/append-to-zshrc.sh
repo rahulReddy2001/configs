@@ -16,4 +16,10 @@ if ! grep -Fxq 'PROMPT="%B%F{blue}%n%f %F{green}%~%f ➜ %b"' "$ZSHRC"; then
     echo "✅ Added PROMPT to .zshrc"
 fi
 
+cdf() {
+  local dir
+  dir=$(find . -type d -not -path '*/\.*' 2> /dev/null | fzf --height 40% --reverse --preview 'ls -la {}' --prompt="📂 Select dir: ") || return
+  cd "$dir"
+}
+
 echo "✅ All done. Please run 'source ~/.zshrc' or restart your terminal to apply changes."
