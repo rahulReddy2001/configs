@@ -24,7 +24,7 @@ fi
 if [[ "$OS" == "ubuntu" ]]; then
     echo "📦 Installing packages with apt..."
     sudo apt update && sudo apt install -y \
-        tmux git curl wget unzip \
+        tmux fzf git curl wget unzip \
         build-essential python3-pip npm
 elif [[ "$OS" == "macos" ]]; then
     if ! command -v brew >/dev/null 2>&1; then
@@ -32,7 +32,7 @@ elif [[ "$OS" == "macos" ]]; then
         exit 1
     fi
     echo "📦 Installing packages with brew..."
-    brew install tmux git curl wget unzip python node neovim
+    brew install tmux git curl wget fzf unzip python node neovim
 fi
 
 # === Install Neovim (both macOS and Ubuntu) ===
