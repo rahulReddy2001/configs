@@ -14,12 +14,14 @@ fi
 if ! grep -Fq "cdf() {" "$BASHRC"; then
   cat << 'EOF' >> "$BASHRC"
 
-
 # fzf-based change directory function
 cdf() {
   local dir
   dir=$(find . -type d -not -path '*/\.*' 2> /dev/null | fzf --height 40% --reverse --preview 'ls -la {}' --prompt="📂 Select dir: ") || return
   cd "$dir"
 }
+EOF
+  echo "✅ Added cdf() function to .bashrc"
+fi
 
 echo "✨ Done. Please run 'source ~/.bashrc' or restart your terminal to apply changes."
