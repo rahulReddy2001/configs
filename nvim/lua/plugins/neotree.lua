@@ -8,6 +8,13 @@ return {
   },
   lazy = false,
   opts = {
+    filesystem = {
+      window = {
+        mappings = {
+          ["u"] = "navigate_up",  
+        },
+      },
+    },
   },
   config = function()
     vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>', { noremap = true, silent = true })
