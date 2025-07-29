@@ -23,3 +23,16 @@ vim.keymap.set('n', '<leader>7', '7gt', { silent = true })
 vim.keymap.set('n', '<leader>8', '8gt', { silent = true })
 vim.keymap.set('n', '<leader>9', '9gt', { silent = true })
 vim.keymap.set('n', '<leader>0', ':tablast<CR>', { silent = true })
+
+-- When a Neo-tree buffer opens, map `u` to reopen at the parent directory
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "neo-tree",
+  callback = function()
+    vim.keymap.set("n", "u", ":Neotree ..<CR>", {
+      buffer = true,
+      noremap = true,
+      silent = true,
+      desc = "Neo-tree: open parent directory",
+    })
+  end,
+})
