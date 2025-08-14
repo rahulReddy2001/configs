@@ -2,7 +2,7 @@
 
 This repository contains my personal configuration files and setup scripts for tools like **tmux**, **Neovim**, **Zsh**, and more. It is designed for easy replication across new machines and provides a consistent development environment.
 
-## 📦 What's Included
+## What's Included
 
 - `tmux/` – Tmux config with TPM plugin manager and Catppuccin theme  
 - `nvim/` – Neovim configuration (Lua or Vimscript)  
@@ -10,7 +10,7 @@ This repository contains my personal configuration files and setup scripts for t
 - `git/` – Git global config  
 - `.config/` – Misc XDG config files (e.g., Alacritty, Starship)  
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Clone this repo**  
    ```bash
@@ -24,7 +24,7 @@ This repository contains my personal configuration files and setup scripts for t
 3. **Finish setup**
   Open tmux and press Ctrl + s then I to install plugins via TPM
 
-## 📁 Structure
+## Structure
 
 ```text
 dotfiles/
